@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#HomePage_Button{
+    position: relative;
+    float: right;
+    z-index: 2;
+    color: burlywood;
+    right: 20px;
+    top: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    font-size: 12px;
+}
+#HomePage_Button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.imageData{
+    height: 525px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.child0 img{
+    width: 400px;
+}
+.child{
+    height: 525px;
+    backdrop-filter: blur(12px) brightness(0.5);
+}
+.child0{
+    align-items: center;
+    width: fit-content;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    top: 15%;
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+}
+.child1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    max-width: 100%;
+}
+.child2{
+    width: 45px !important;
+    height: 30px;
+    border-radius: 999px;
+    margin-top: 5px;
+}
+.child3{
+    display: flex;
+    flex-flow:column ;
+    font-weight: bold;
+    size: 20px;
+    color: white;
+    padding: 5px;
+    width: 80%;
+}
+.child4{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+    align-items: stretch;
+}
+.child4 button{
+    padding: 4px;
+    color: white;
+    background-color: darkred;
+    /* border: 2px solid darkred; */
+    box-shadow: 0px 0px 5px darkred;
+    border-radius: 999px;
+}
+.child3 div{
+    margin: 2px;
+}
+.footer{
+    background-color: darkgrey;
+    color: black;
+    padding: 4px;
+    text-align: center;
+    overflow: hidden;
+}
+.footer_partOne{
+    animation: moveFooter 20s linear infinite;
+}
+#CommentsContainer{
+    position: absolute;
+    bottom: 23px;
+    align-content:center;
+    width: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px 30% 0px 30%;
+}
+#CommentsContainer h3{
+    margin: 10px 0px 3px 0px;
+}
+#CommentsContainer select{
+    padding: 5px 0px;
+    padding: 5px 6px;
+    border-radius: 20px;
+    margin: 5px 0px 2px 0px;
+}
+#CommentsContainer input{
+    width: 210px;
+    padding: 5px 10px;
+    border-radius:20px ;
+    margin: 2px 0px 5px 0px;
+}
+#CommentsContainer button{
+    padding: 5px;
+    color: white;
+    background-color: #4f3b3b;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+}
+#CommentsContainer button:hover{
+    cursor: pointer;
+    color: #5e5050;
+    color: white;
+}
+@keyframes moveFooter{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Details</title>
+    <script src="data.js"></script>
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <span id="HomePage_Button" onclick="BackToHomePage()">
+        <i class="bi bi-arrow-bar-left"></i>
+        <p>Go to Home Page</p>
+    </span>
+    <div id="DetailsContainer">
+    </div>
+    <div id="CommentsContainer">
+        <h4>Comment Section</h4>
+        <select id="CommentDropdown"></select>
+        <form id="CommentForm">
+            <input type="text" id="CommentInput" placeholder="Add a comment" >
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer_partOne">
+            <div class="footer_content_text">
+                &copy; 2021 Sephora USA, Inc. All rights reserved. &nbsp; &nbsp; &nbsp;&nbsp;&copy; 2021 Sephora USA,
+                Inc. All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&copy;2021 Sephora USA, Inc. All rights reserved.</div>
+        </div>
+    </footer>
+    <script src="details.js"></script>
+    <!-- <script src="index.js"></script> -->
+</body>
+
+</html>

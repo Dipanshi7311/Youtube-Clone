@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="icon" type="image" href="Images\img1.png">
+    <script src="data.js"></script>
+</head>
+
+<body>
+    <div id="Top_Navigation">
+        <div class="TopNav">
+            <div class="Topbar">
+                <div class="Left_Part" style="display: flex;">
+                    <div id="ToggleIcon" class="Icon" onclick="Open_Side_Nav()"> &#9776;
+                    </div>
+                    <div id="Youtube_Logo_Part">
+                        <div class="Youtube_Logo">
+                            <img src="img1.png" alt="icon" class="Youtube_Logo">
+                        </div>
+                        <div class="Youtube_Define" style="font-size: 20px;">
+                            <p>YouTube</p>
+                        </div>
+                        <div class="Youtube_Define_Sup" style="font-size: 15px;">
+                            <p><sup>IN</sup></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="Search_Bar">
+                    <div class="Search_bar">
+                        <input type="text" name="Search" class="Input_Search_Bar" id="Search_bar" placeholder="Search">
+                    </div>
+                    <div id="Search_button" class="Search_Icon_Div">
+                        <div class="Search_Icon">&#9906;
+                        </div>
+                    </div>
+                    <div id="Search_Close_Button" class="Search_Close_Icon_Div">
+                        <div class="Search_Close_Icon">&times;
+                        </div>
+                    </div>
+                    <div class="Voice_Capturer">
+                        <div class="Voice_Capturer_Icon">
+                            <div class="Voice_Capturer_Icon_Image">
+                                <i class="bi bi-mic-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Sorting_selection">
+                        <select name="sort_selection" id="sort_with_selection">
+                            <option value="" disabled selected>--Sort--</option>
+                            <option value="date_asc">Oldest</option>
+                            <option value="date_dsc">Latest</option>
+                            <option value="asc">A - Z</option>
+                            <option value="dsc">Z - A</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="Right_Whole_Part">
+                    <div id="Switch_View" class="Switch_View">
+                        <label style="font-size: 12px;">Tabular view:&nbsp;</label>
+                        <i id="toggle_icon_off" class="bi bi-toggle-off"></i>
+                        <i id="toggle_icon_on" class="bi bi-toggle-on"></i>
+                    </div>
+                    <div class="Add_Card" onclick="Add_Card()">
+                        <i class="bi bi-folder-plus"></i>
+                    </div>
+                    <div class="Youtube_Camera">
+                        <i class="bi bi-camera-video"></i>
+                    </div>
+                    <div class="Youtube_Notify">
+                        <i class="bi bi-bell"></i>
+                    </div>
+                    <div id="Profile" class="Profile">
+                        <i id="bi_bi-person" class="bi bi-person"></i>
+                        <div id="Profile_dropdown" class="Profile_dropdown">
+                            <div class="classInside_Profile_dropdown"><i class="bi bi-person"></i>
+                                <p>Profile</p>
+                            </div>
+                            <div id="Logout" class="classInside_Profile_dropdown"><i class="bi bi-arrow-bar-left"></i>
+                                <p>LogOut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Side_Navigation">
+        <div id="Side_Navigation_Bar">
+            <div id="Navigation_Part_One">
+                <div class="Navigation_Icons">
+                    <i class="bi bi-house-door" style="padding: 2px;"></i>
+                    <p id="Navigation_Icons_Text1" class="Navigation_Icons_Text">Home</p>
+                </div>
+                <div class="Navigation_Icons">
+                    <i class="bi bi-lightning" style="padding: 2px;"></i>
+                    <p id="Navigation_Icons_Text2" class="Navigation_Icons_Text">Shorts</p>
+                </div>
+                <div class="Navigation_Icons">
+                    <i class="bi bi-collection-play" style="padding: 2px;"></i>
+                    <p id="Navigation_Icons_Text3" class="Navigation_Icons_Text">Subscriptions</p>
+                </div>
+            </div>
+            <hr style="width: 100%; color: #d3d3d3; margin: auto;">
+            <div id="Navigation_Part_Two">
+                <div class="Navigation_Icons">
+                    <i class="bi bi-play-btn" style="padding: 2px;"></i>
+                    <p id="Navigation_Icons_Text4" class="Navigation_Icons_Text">Library</p>
+                </div>
+                <div class="Navigation_Icons">
+                    <i class="bi bi-clock-history" style="padding: 2px;"></i>
+                    <p id="Navigation_Icons_Text5" class="Navigation_Icons_Text">History</p>
+                </div>
+                <div class="Navigation_Icons">
+                    <i class="bi bi-play-btn" style="padding: 2px;"></i>
+                    <p id="Navigation_Icons_Text6" class="Navigation_Icons_Text">Your Videos</p>
+                </div>
+                <div class="Navigation_Icons">
+                    <i class="bi bi-clock" style="padding: 2px;"></i>
+                    <p id="Navigation_Icons_Text7" class="Navigation_Icons_Text">Watch Later</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Scroller">
+        <div id="Scroll_Container">
+            <div class="Scroll_Container_Content">
+                <div id="Entered_Content"></div>
+            </div>
+        </div>
+    </div>
+    <div id="Main_Content">
+        <div id="Main_Content_Table" class="Main_Content_Table">
+            <table><center>
+                <caption>Card Details</caption>
+                <thead>
+                    <tr>
+                        <th>Id No</th>
+                        <th>Card Img</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Profile Img</th>
+                        <th>Time</th>
+                        <th>Functions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </center></table>
+        </div>
+        <div id="Main_Content_Grid" class="Main_Content_Grid">
+            <div id="Card_Container"></div>
+        </div>
+    </div>
+    <script src="AddCard.js"></script>
+    <script src="index.js"></script>
+    <script src="details.js"></script>
+</body>
+
+</html>

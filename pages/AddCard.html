@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Card</title>
+    <link rel="stylesheet" href="AddCard.css">
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <form style="position: absolute;">
+        <div id="Form_Container" class="Form_Container">
+            <div class="Form_Container_WithIcon">
+                <!-- <span class="Cross_Bar_Icon" onclick="Close_Form()">&times;</span> -->
+                <div id="Add_Card_Form">
+                    <div class="Top_Header">
+                        <h2>Enter Details for New Card</h2>
+                    </div>
+                    <div class="Form_Body">
+                        <div class="Content">
+                            <label for="image_URL">Image_URL :</label>
+                            <input type="text" id="Image_URL" placeholder="Enter Here">
+                        </div>
+                        <div class="Content">
+                            <label for="profile_image">Profile URL :</label>
+                            <input type="text" id="Profile_Url" placeholder="Enter Here">
+                        </div>
+                        <div class="Content">
+                            <label for="Title">Title :</label>
+                            <input type="text" id="Title" placeholder="Enter Here">
+                        </div>
+                        <div class="Content">
+                            <label for="Description1">Description 1 :</label>
+                            <input type="text" id="Description1" placeholder="Enter Here">
+                        </div>
+                        <div class="Content">
+                            <label for="Description2">Time :</label>
+                            <input type="text" id="time" placeholder="Enter Here">
+                        </div>
+                        <div class="Form_Buttons">
+                            <div class="Content">
+                                <button type="button" id="reset">Reset</button>
+                            </div>
+                            <div class="Content">
+                                <button type="button" id="createCard">Add Card</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="AddCard.js"></script>
+</body>
+
+</html>

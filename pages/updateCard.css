@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#main_container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 550px;
+    width: 100%;
+}
+#main_container .container1{
+    background-color: whitesmoke;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.Content_in_container1{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+#without_fill_pencil{
+    position: relative;
+    font-size: 50px;
+}
+#with_fill_pencil{
+    position: relative;
+    display: none;
+    font-size: 50px;
+}
+.Content_in_container1 h3:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#main_container .container2{
+    background-color: #600360;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+.Content_in_container2{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.Content_in_container2 form{
+    width: 370px;
+    height:auto;
+}
+.Form_Container{
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 5px #cbcbcb;
+}
+#Update_Form {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+    background-color: #e5e4e4;
+    border-radius: 10px;
+    position: relative;
+    padding: 30px 0px 15px 0px;
+    box-shadow: inset 0px 0px 20px 10px #350235;
+}
+.Form_Body {
+    display: grid;
+    grid-auto-flow: row;
+    align-content: center;
+    justify-content: space-around;
+    justify-items: end;
+    gap: 20px;
+    padding: 20px;
+}
+#Update_Form .Form_Body .Content {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: end;
+    gap: 18px;
+}
+#Update_Form .Form_Body .Content input {
+    width: auto;
+    height: 20px;
+    border: none;
+    padding: 2px;
+    color: grey;
+    border-radius: 5px;
+}
+#Update_Form .Form_Body .Form_Buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+#Update_Form .Form_Body .Content button {
+    background-color: #8e798e;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+#Update_Form .Form_Body .Content button:hover{
+    font-size: 13.5px;
+}

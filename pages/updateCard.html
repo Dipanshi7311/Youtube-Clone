@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Card</title>
+    <link rel="stylesheet" href="updateCard.css" class="css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="data.js"></script>
+</head>
+
+<body>
+    <div id="main_container">
+        <div class="container1">
+            <div class="Content_in_container1">
+                <div id="icon">
+                    <i id="without_fill_pencil" class="bi bi-pen"></i>
+                    <i id="with_fill_pencil" class="bi bi-pen-fill"></i>
+                </div>
+                <h3 style="text-align: center;">START UPDATING CONTENT</h3>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="Content_in_container2">
+                <form>
+                    <div id="Form_Container" class="Form_Container">
+                        <div id="Update_Form">
+                            <div class="Top_Header">
+                                <h2>Make Changes here...</h2>
+                            </div>
+                            <div class="Form_Body">
+                                <div class="Content">
+                                    <label for="card_ID">Card_ID :</label>
+                                    <input type="text" id="Card_ID" name="Card_ID">
+                                </div>
+                                <div class="Content">
+                                    <label for="image_URL">Image_URL :</label>
+                                    <input type="text" id="Image_URL" name="Image_URL">
+                                </div>
+                                <div class="Content">
+                                    <label for="profile_image">Profile URL :</label>
+                                    <input type="text" id="Profile_Url" name="Profile_Url" >
+                                </div>
+                                <div class="Content">
+                                    <label for="Title">Title :</label>
+                                    <input type="text" id="Title" name="Title">
+                                </div>
+                                <div class="Content">
+                                    <label for="Description1">Description 1 :</label>
+                                    <input type="text" id="Description1" name="Description1">
+                                </div>
+                                <div class="Content">
+                                    <label for="time">Time :</label>
+                                    <input type="text" id="time" name="time">
+                                </div>
+                                <div class="Form_Buttons">
+                                    <div class="Content">
+                                        <button type="button" id="createCard">Update Card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="updateCard.js"></script>
+</body>
+
+</html>
